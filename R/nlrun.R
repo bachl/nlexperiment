@@ -409,7 +409,7 @@ nl_single_run <- function(experiment, parameter_set_id, run_id,
     ret$criteria <- as.data.frame(t(unlist(criteria_vec)))
     ret$criteria$param_set_id <- parameter_set_id
     ret$criteria$run_id <- run_id
-    ret$step <- NULL
+#    ret$step <- NULL
   }
   # if external data handler is defined
   if(!is.null(experiment$run_options$data_handler)) {
