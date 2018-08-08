@@ -311,7 +311,8 @@ nl_single_run <- function(experiment, parameter_set_id, run_id,
         names(agents_step[[1]])
       )
   }
-  else if(length(experiment$measures$step) > 0 ) {
+#  else if(length(experiment$measures$step) > 0 ) {
+  if(length(experiment$measures$step) > 0 ) {
     # if any step measures defined - use RNetLogo::NLDoReportWhile
     if(!is.null(experiment$while_condition)) {
       report_step <- RNetLogo::NLDoReportWhile(
